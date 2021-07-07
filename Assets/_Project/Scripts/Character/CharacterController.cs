@@ -1,5 +1,8 @@
 using UnityEngine;
 
+/// <summary>
+/// BASE - A base class for character movement.
+/// </summary>
 [RequireComponent(typeof(Rigidbody2D))]
 public class CharacterController : MonoBehaviour
 {
@@ -24,6 +27,8 @@ public class CharacterController : MonoBehaviour
 
     // Responsible for movement logic
     #region Movement
+    [Header("Movement")]
+
     [Tooltip("The maximum velocity of the character")]
     [Range(0.25f, 12f)]
     [SerializeField]
@@ -78,23 +83,35 @@ public class CharacterController : MonoBehaviour
     {
         if (MoveDirection != Vector2.zero) // Accelerate/Move
         {
-            if (MoveSpeed.magnitude < maxVelocity) // Accelerating
+            if (rb.velocity.magnitude < maxVelocity) // Accelerating
                 rb.velocity = Vector2.MoveTowards(rb.velocity, MoveSpeed, accelerationSpeed);
             else // Move
                 rb.velocity = MoveSpeed;
         }
         else // Decelerate/Stop
         {
-            if (MoveSpeed.magnitude > 0) // Decelerate
+            if (rb.velocity.magnitude > 0) // Decelerate
                 rb.velocity = Vector2.MoveTowards(rb.velocity, Vector2.zero, decelerationSpeed);
-         // else 
-             // Stop
+         // else
+            // Stop
         }
     }
     #endregion
 
+    [Space]
+
     // Responsible for rotation logic
     #region Rotation
+    [Header("Rotation")]
+
+    [Tooltip("True: lerping the rotation. False: setting the rotation to the DesiredRotation")]
+    [SerializeField]
+    private bool lerpRotation = false;
+
+    [Tooltip("The speed of rotation")]
+    [SerializeField]
+    private float rotationSpeed = 1.0f;
+
     /// <summary>
     /// The position to rotate to
     /// </summary>
@@ -106,19 +123,15 @@ public class CharacterController : MonoBehaviour
     {
         get
         {
-            Quaternion result = transform.localRotation;
-
             Vector2 direction = rotationTarget - (Vector2)transform.position;
-            float angle = Mathf.Atan2(direction.y, direction.x); // NOT in degrees. Using radience for less computing.
-            result.z = angle;
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
-            return result;
+            return Quaternion.Euler(transform.eulerAngles.x, transform.eulerAngles.y, angle);
         }
     }
 
-    /// <summary>
-    /// The mode of rotation <see cref="RotationMode"/>
-    /// </summary>
+    [Tooltip("The mode of rotation RotationMode")]
+    [SerializeField]
     protected RotationMode rotationMode;
 
     /// <summary>
@@ -126,10 +139,13 @@ public class CharacterController : MonoBehaviour
     /// </summary>
     private void UpdateRotation()
     {
-        if (rotationMode == RotationMode.ToMovement)
-            rotationTarget = (Vector2)transform.position + MoveDirection;
+        if (rotationMode == RotationMode.ToMovement && MoveDirection != Vector2.zero)
+            rotationTarget = (Vector2)transform.position + MoveSpeed;
 
-        transform.localRotation = DesiredRotation;
+        if (lerpRotation)
+            transform.localRotation = Quaternion.Lerp(transform.localRotation, DesiredRotation, rotationSpeed);
+        else
+            transform.localRotation = DesiredRotation;
     }
 
     /// <summary>

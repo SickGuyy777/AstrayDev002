@@ -15,11 +15,11 @@ C:/Users/idans/Desktop/Astray/AstrayDev002
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57030
+58856
 Successfully changed project path to: C:/Users/idans/Desktop/Astray/AstrayDev002
 C:/Users/idans/Desktop/Astray/AstrayDev002
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 94.37 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 86.95 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.7f1 (d91830b65d9b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/2021.1.7f1/Editor/Data/Resources/UnitySubsystems
@@ -35,264 +35,283 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/2021.1.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/2021.1.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/2021.1.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56344
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56084
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/2021.1.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002177 seconds.
+Registered in 0.002125 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 121.38 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 111.16 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.333 seconds
+- Completed reload, in  1.927 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004462 seconds.
+Registered in 0.003381 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 115.78 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 133.20 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.306 seconds
+- Completed reload, in  2.025 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.84 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3373 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3376 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 127.9 MB.
 System memory in use after: 128.0 MB.
 
-Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 3826.
-Total: 3.442700 ms (FindLiveObjects: 0.288200 ms CreateObjectMapping: 0.188700 ms MarkObjects: 2.832500 ms  DeleteObjects: 0.131100 ms)
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 3829.
+Total: 4.615300 ms (FindLiveObjects: 0.423400 ms CreateObjectMapping: 0.251100 ms MarkObjects: 3.741700 ms  DeleteObjects: 0.197500 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/_Project/Scripts/Attributes
-  artifactKey: Guid(4390242eab642714a8950d1d1be6fc3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Project/Scripts/Attributes using Guid(4390242eab642714a8950d1d1be6fc3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2ee88a0f166195713ab11f402b96853') in 0.019742 seconds 
+  path: Assets/_Project/Scripts/Interaction System
+  artifactKey: Guid(abda05ae0fb809442bed302b04de0067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Scripts/Interaction System using Guid(abda05ae0fb809442bed302b04de0067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1764dab262f79d4c3c7bdbe836d46cb2') in 0.016761 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000391 seconds.
-  path: Assets/_Project/Scripts/Attributes/Edtior
-  artifactKey: Guid(f186bca0f7d36d2499b8bf8fbdfe7484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Project/Scripts/Attributes/Edtior using Guid(f186bca0f7d36d2499b8bf8fbdfe7484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6ea014ad48d95ae61a4998a5009b6b6') in 0.016660 seconds 
+  Time since last request: 0.000389 seconds.
+  path: Assets/_Project/Scripts/Interaction System/Interactor.cs
+  artifactKey: Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Scripts/Interaction System/Interactor.cs using Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88d9cf4a59da2476be0331a618a8602b') in 0.046378 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.849306 seconds.
-  path: Assets/_Project/Scripts/Attributes/Edtior/ReadonlyDrawer.cs
-  artifactKey: Guid(63bf382afb8bc1547b5cf257158b9493) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Project/Scripts/Attributes/Edtior/ReadonlyDrawer.cs using Guid(63bf382afb8bc1547b5cf257158b9493) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '857e692469e6c3933a11b103a472de84') in 0.059837 seconds 
+  Time since last request: 403.173969 seconds.
+  path: Assets/_Project/Scripts/Interaction System/Interactor.cs
+  artifactKey: Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Scripts/Interaction System/Interactor.cs using Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '511b0c9b397c8420986805af3dcfc2f1') in 0.005530 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.640826 seconds.
+  path: Assets/_Project/Scripts/Interaction System/Interactor.cs
+  artifactKey: Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Scripts/Interaction System/Interactor.cs using Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8af569fb985e2bfeb93ecc2e14d40642') in 0.004969 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.392494 seconds.
+  path: Assets/_Project/Scripts/Interaction System/Interactor.cs
+  artifactKey: Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Scripts/Interaction System/Interactor.cs using Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '617fd61511db78cd4f9db861b23bfce1') in 0.004200 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.064674 seconds.
+  path: Assets/_Project/Scripts/Interaction System/Interactor.cs
+  artifactKey: Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Scripts/Interaction System/Interactor.cs using Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2e8469f85960145aa10cf576784c852') in 0.004780 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 35.385117 seconds.
+  path: Assets/_Project/Scripts/Interaction System/Interactor.cs
+  artifactKey: Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Scripts/Interaction System/Interactor.cs using Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '413e50819f610692bf3fa6fec89bf7b3') in 0.005059 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.501992 seconds.
+  path: Assets/_Project/Scripts/Interaction System/Interactor.cs
+  artifactKey: Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Scripts/Interaction System/Interactor.cs using Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d8191e81459a96a5db48f051759fda3') in 0.005015 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.300032 seconds.
+  path: Assets/_Project/Scripts/Interaction System/Interactor.cs
+  artifactKey: Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Scripts/Interaction System/Interactor.cs using Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b98c5cd234b0039eef738674bf092e8') in 0.005799 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.251946 seconds.
+  path: Assets/_Project/Scripts/Interaction System/Interactor.cs
+  artifactKey: Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Scripts/Interaction System/Interactor.cs using Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5836656443f033895f3c1032a3e854ee') in 0.006757 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.687700 seconds.
+  path: Assets/_Project/Scripts/Interaction System/Interactor.cs
+  artifactKey: Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Scripts/Interaction System/Interactor.cs using Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1620eb2ef2593fda8120f06131938a6') in 0.005840 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.329096 seconds.
+  path: Assets/_Project/Scripts/Interaction System/Interactor.cs
+  artifactKey: Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Scripts/Interaction System/Interactor.cs using Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9420522ac828d59043a7abf80c638dcf') in 0.004241 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.665947 seconds.
+  path: Assets/_Project/Scripts/Interaction System/Interactor.cs
+  artifactKey: Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Scripts/Interaction System/Interactor.cs using Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '279d9b1f7af29460c74af6265a7293c1') in 0.004851 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.611696 seconds.
+  path: Assets/_Project/Scripts/Interaction System/Interactor.cs
+  artifactKey: Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Scripts/Interaction System/Interactor.cs using Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37315d595a6d547a2b8ded8c288b3615') in 0.004424 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.906074 seconds.
+  path: Assets/_Project/Scripts/Interaction System/Interactor.cs
+  artifactKey: Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Scripts/Interaction System/Interactor.cs using Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b67f3d0d5574cdf96d3aab67ea1be43e') in 0.006681 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.511160 seconds.
+  path: Assets/_Project/Scripts/Interaction System/Interactor.cs
+  artifactKey: Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Scripts/Interaction System/Interactor.cs using Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '597c20db08db75d68b158c9794aeb722') in 0.005554 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.542052 seconds.
+  path: Assets/_Project/Scripts/Interaction System/Interactor.cs
+  artifactKey: Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Scripts/Interaction System/Interactor.cs using Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1003d747ef366427fd455e70c2174a3') in 0.005203 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.530765 seconds.
+  path: Assets/_Project/Scripts/Interaction System/Interactor.cs
+  artifactKey: Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Scripts/Interaction System/Interactor.cs using Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b3b3f06115e26b2909ce44e471f8c29') in 0.005290 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.641467 seconds.
+  path: Assets/_Project/Scripts/Interaction System/Interactor.cs
+  artifactKey: Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Scripts/Interaction System/Interactor.cs using Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6117f793b6798e712d91b38eba82d25d') in 0.006050 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.369944 seconds.
+  path: Assets/_Project/Scripts/Interaction System/Interactor.cs
+  artifactKey: Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Scripts/Interaction System/Interactor.cs using Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0fb7b6b453e45d0b6238a1634798bed') in 0.006049 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5306.004352 seconds.
+  path: Assets/_Project/Scripts/Interaction System/Interactor.cs
+  artifactKey: Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Scripts/Interaction System/Interactor.cs using Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf4dac0efb492d4ba97ff29ca04cb5ed') in 0.004793 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 175.243106 seconds.
+  path: Assets/_Project/Scripts/Interaction System/Interactor.cs
+  artifactKey: Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Scripts/Interaction System/Interactor.cs using Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3564b7e65ef8f4b1fb7cf1afdd71fc0') in 0.005748 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.192735 seconds.
+  path: Assets/_Project/Scripts/Interaction System/Interactor.cs
+  artifactKey: Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Scripts/Interaction System/Interactor.cs using Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9563e4df4f987bdb4c84c1115002a7eb') in 0.004950 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 86.837775 seconds.
+  path: Assets/_Project/Scripts/Interaction System/Interactor.cs
+  artifactKey: Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Scripts/Interaction System/Interactor.cs using Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbbb2f9774874cd5b5ef7580aed825d8') in 0.004635 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.775287 seconds.
+  path: Assets/_Project/Scripts/Interaction System/Interactor.cs
+  artifactKey: Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Scripts/Interaction System/Interactor.cs using Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb1cfd171ed76ef0514e3b3e613e2061') in 0.005827 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.694684 seconds.
+  path: Assets/_Project/Scripts/Interaction System/Interactor.cs
+  artifactKey: Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Scripts/Interaction System/Interactor.cs using Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02514f28628989954e5e9c38adef7f86') in 0.004975 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 205.770489 seconds.
+  path: Assets/_Project/Scripts/Interaction System/Interactor.cs
+  artifactKey: Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Scripts/Interaction System/Interactor.cs using Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5046f0b14427cd297431b01d667a269') in 0.005569 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.373743 seconds.
+  path: Assets/_Project/Scripts/Interaction System/Interactor.cs
+  artifactKey: Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Scripts/Interaction System/Interactor.cs using Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf73db79a67159ba3101a593ee7556ba') in 0.005000 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004745 seconds.
+Registered in 0.003201 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.10 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.281 seconds
+- Completed reload, in  1.029 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3369 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 127.9 MB.
-System memory in use after: 128.0 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3831.
-Total: 3.849600 ms (FindLiveObjects: 0.543200 ms CreateObjectMapping: 0.329700 ms MarkObjects: 2.861800 ms  DeleteObjects: 0.112000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005260 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.54 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.325 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.09 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3369 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3372 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 128.0 MB.
 System memory in use after: 128.1 MB.
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3835.
-Total: 3.219700 ms (FindLiveObjects: 0.381300 ms CreateObjectMapping: 0.292500 ms MarkObjects: 2.417600 ms  DeleteObjects: 0.126800 ms)
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3834.
+Total: 2.656300 ms (FindLiveObjects: 0.263000 ms CreateObjectMapping: 0.125200 ms MarkObjects: 2.171600 ms  DeleteObjects: 0.095500 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 143.727171 seconds.
-  path: Assets/_Project/Scripts/Attributes/Edtior/ReadonlyDrawer.cs
-  artifactKey: Guid(63bf382afb8bc1547b5cf257158b9493) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Project/Scripts/Attributes/Edtior/ReadonlyDrawer.cs using Guid(63bf382afb8bc1547b5cf257158b9493) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17e5d58b888e4b5317fb651964308f7e') in 0.010495 seconds 
+  Time since last request: 388.114003 seconds.
+  path: Assets/_Project/Scripts/Interaction System/Interactor.cs
+  artifactKey: Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Scripts/Interaction System/Interactor.cs using Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001107 seconds  code(4) message(Build asset version error: assets/_project/scripts/interaction system/interactor.cs in SourceAssetDB has modification time of '2021-07-07T06:52:52.0207617Z' while content on disk has modification time of '2021-07-07T06:53:05.6830957Z')
+  ERROR: Build asset version error: assets/_project/scripts/interaction system/interactor.cs in SourceAssetDB has modification time of '2021-07-07T06:52:52.0207617Z' while content on disk has modification time of '2021-07-07T06:53:05.6830957Z'
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003638 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.015 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3372 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 128.0 MB.
+System memory in use after: 128.1 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3838.
+Total: 4.575500 ms (FindLiveObjects: 0.354300 ms CreateObjectMapping: 0.239200 ms MarkObjects: 3.834500 ms  DeleteObjects: 0.145100 ms)
+
 ========================================================================
 Received Import Request.
-  Time since last request: 3.099641 seconds.
-  path: Assets/_Project/Scenes/SampleScene.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Project/Scenes/SampleScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa27944bdea339c97c39027c7eea529c') in 0.030647 seconds 
+  Time since last request: 706.166831 seconds.
+  path: Assets/_Project/Scripts/Interaction System/Interactor.cs
+  artifactKey: Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Scripts/Interaction System/Interactor.cs using Guid(77c4c4df7a6cbfd4ab91431099592aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b334ec3599a58e6b1f329de245fd93e3') in 0.012393 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005549 seconds.
+Registered in 0.003007 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.93 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.97 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.194 seconds
+- Completed reload, in  1.102 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.90 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3369 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 128.0 MB.
-System memory in use after: 128.1 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3839.
-Total: 3.075100 ms (FindLiveObjects: 0.324600 ms CreateObjectMapping: 0.167600 ms MarkObjects: 2.454200 ms  DeleteObjects: 0.124000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003924 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.37 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.469 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.95 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3369 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 128.0 MB.
-System memory in use after: 128.1 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3843.
-Total: 2.919200 ms (FindLiveObjects: 0.333600 ms CreateObjectMapping: 0.213100 ms MarkObjects: 2.255200 ms  DeleteObjects: 0.115700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003545 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.24 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.386 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3369 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 128.0 MB.
-System memory in use after: 128.1 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3847.
-Total: 2.781900 ms (FindLiveObjects: 0.277300 ms CreateObjectMapping: 0.155400 ms MarkObjects: 2.246100 ms  DeleteObjects: 0.101800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003294 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.89 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.219 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3369 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 128.0 MB.
-System memory in use after: 128.1 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3851.
-Total: 2.668400 ms (FindLiveObjects: 0.309200 ms CreateObjectMapping: 0.141600 ms MarkObjects: 2.104400 ms  DeleteObjects: 0.111900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003868 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.22 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.572 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.04 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3369 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3372 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 128.1 MB.
 System memory in use after: 128.2 MB.
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3855.
-Total: 9.179200 ms (FindLiveObjects: 0.770500 ms CreateObjectMapping: 0.254600 ms MarkObjects: 7.197700 ms  DeleteObjects: 0.949400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004336 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.16 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.372 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3369 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 128.1 MB.
-System memory in use after: 128.2 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3859.
-Total: 2.859700 ms (FindLiveObjects: 0.357200 ms CreateObjectMapping: 0.139800 ms MarkObjects: 2.258800 ms  DeleteObjects: 0.102400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003592 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.51 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.189 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3369 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 128.1 MB.
-System memory in use after: 128.2 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3863.
-Total: 3.237900 ms (FindLiveObjects: 0.286200 ms CreateObjectMapping: 0.182200 ms MarkObjects: 2.653700 ms  DeleteObjects: 0.114300 ms)
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3842.
+Total: 2.650500 ms (FindLiveObjects: 0.377600 ms CreateObjectMapping: 0.159300 ms MarkObjects: 2.013000 ms  DeleteObjects: 0.099500 ms)
 
