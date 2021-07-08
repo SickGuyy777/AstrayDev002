@@ -22,8 +22,6 @@ public class AnimatedObject : MonoBehaviour
     public int Sprite { get; private set; } = -1;
     private SpriteRenderer _renderer;
 
-    private bool inLoop;
-
     /// <summary>
     /// See <see cref="MonoBehaviour"/>.
     /// Referencing <see cref="_renderer"/>.
@@ -68,9 +66,13 @@ public class AnimatedObject : MonoBehaviour
     {
         Playing = -1;
         StopCoroutine(PlayAnimation(Playing));
-        inLoop = false;
     }
 
+    /// <summary>
+    /// Play a specific sprite.
+    /// </summary>
+    /// <param name="animationIndex"></param>
+    /// <param name="spriteIndex"></param>
     public void PlaySprite(int animationIndex, int spriteIndex)
     {
         Assert.IsFalse(animationIndex >= animations.Count, "Animation index is out of range.");
@@ -113,7 +115,6 @@ public class AnimatedObject : MonoBehaviour
     private IEnumerator PlayAnimation(int currentAnim)
     {
         nRunning++;
-        inLoop = true;
         foreach (var sprite in animations[currentAnim].sprites)
         {
             if (Sprite > -1)
@@ -134,7 +135,6 @@ public class AnimatedObject : MonoBehaviour
         }
 
         nRunning--;
-        inLoop = false;
     }
 }
 

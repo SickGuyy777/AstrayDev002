@@ -25,9 +25,9 @@ public class PlayerController : CharacterController
         MoveDirection = new Vector2(horizontalInput, verticalInput);
 
         if (MoveDirection != Vector2.zero)
-            animated.PlaySprite(0, 0);
+            animated.PlayAnimation(0, true);
         else
-            animated.PlaySprite(1, 0);
+            animated.PlayAnimation(1, true);
 
         // Rotation
         if (rotationMode == RotationMode.ToTarget)
@@ -37,6 +37,13 @@ public class PlayerController : CharacterController
         bool interact = Input.GetButton("Interact");
 
         if (interact)
-            _interactor.Interact();
+        {
+            Interactable interactable = _interactor.GetSelectedInteractable();
+            if (interactable is Pickupable pickupable)
+            {
+                pickupable.Interact(_interactor, (Vector2)transform.position + (Vector2)transform.up,
+                        transform.rotation, transform);
+            }
+        }
     }
 }

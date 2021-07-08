@@ -16,7 +16,7 @@ public class DirectInteractor : Interactor
     /// See <see cref="Interactor"/>.
     /// </summary>
     /// <returns></returns>
-    protected override Interactable GetSelectedInteractable()
+    public override Interactable GetSelectedInteractable()
     {
         if (hoveredInteractables.Count == 0)
             return null;

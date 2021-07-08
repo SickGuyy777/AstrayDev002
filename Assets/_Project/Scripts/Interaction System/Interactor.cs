@@ -53,7 +53,7 @@ public class Interactor : MonoBehaviour
     /// Get the selected interactable.
     /// </summary>
     /// <returns>The selected interactable</returns>
-    protected virtual Interactable GetSelectedInteractable()
+    public virtual Interactable GetSelectedInteractable()
     {
         Debug.LogException(new System.NotImplementedException($"GetSelectedInteractable() not implemented in {name}"), gameObject);
         return null;

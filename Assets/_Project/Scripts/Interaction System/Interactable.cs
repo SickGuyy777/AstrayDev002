@@ -52,15 +52,15 @@ public class Interactable : MonoBehaviour
     /// Interact with the <see cref="Interactable"/>.
     /// </summary>
     /// <param name="interactor"></param>
-    public void Interact(Interactor interactor)
+    public void Interact(Interactor interactor, params object[] objs)
     {
         interactFunction = true;
 
         if (!Interacted)
         {
             Interacted = true;
-            OnStartInteract(interactor);
-            StartCoroutine(InteractionUpdate(interactor));
+            OnStartInteract(interactor, objs);
+            StartCoroutine(InteractionUpdate(interactor, objs));
         }
     }
 
@@ -68,34 +68,34 @@ public class Interactable : MonoBehaviour
     /// Called after <see cref="Hover(Interactor)"/>.
     /// </summary>
     /// <param name="interactor"></param>
-    protected void OnHover(Interactor interactor) { Debug.Log("Hovering"); }
+    protected virtual void OnHover(Interactor interactor) { Debug.Log("Hovering"); }
     /// <summary>
     /// Called after <see cref="StopHover(Interactor)"/>.
     /// </summary>
     /// <param name="interactor"></param>
-    protected void OnStopHover(Interactor interactor) { Debug.Log("Stop Hovering"); }
+    protected virtual void OnStopHover(Interactor interactor) { Debug.Log("Stop Hovering"); }
     /// <summary>
     /// Called when <paramref name="interactor"/> starts interacting with <see langword="this"/> <see cref="Interactable"/>.
     /// </summary>
     /// <param name="interactor"></param>
-    protected void OnStartInteract(Interactor interactor) { Debug.Log("Start Interacting"); }
+    protected virtual void OnStartInteract(Interactor interactor, object[] objs) { Debug.Log("Start Interacting"); }
     /// <summary>
     /// Called if <paramref name="interactor"/> is still interacting.
     /// </summary>
     /// <param name="interactor"></param>
-    protected void OnInteract(Interactor interactor) { Debug.Log("Still Interacting"); }
+    protected virtual void OnInteract(Interactor interactor, object[] objs) { Debug.Log("Still Interacting"); }
     /// <summary>
     /// Called when <paramref name="interactor"/> stops interacting with <see langword="this"/> <see cref="Interactable"/>.
     /// </summary>
     /// <param name="interactor"></param>
-    protected void OnStopInteract(Interactor interactor) { Debug.Log("Stop Interacting"); }
+    protected virtual void OnStopInteract(Interactor interactor, object[] objs) { Debug.Log("Stop Interacting"); }
 
     /// <summary>
     /// Running the interaction update of <paramref name="interactor"/>.
     /// </summary>
     /// <param name="interactor"></param>
     /// <returns></returns>
-    private IEnumerator InteractionUpdate(Interactor interactor)
+    private IEnumerator InteractionUpdate(Interactor interactor, object[] objs)
     {
         int timesNotInteracted = 0;
         while (true)
@@ -114,9 +114,9 @@ public class Interactable : MonoBehaviour
                 break;
             }
             yield return interactor.SearchCooldown;
-            OnInteract(interactor);
+            OnInteract(interactor, objs);
         }
 
-        OnStopInteract(interactor);
+        OnStopInteract(interactor, objs);
     }
 }
