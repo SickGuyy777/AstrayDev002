@@ -9,6 +9,9 @@ public class AnimatedObject : MonoBehaviour
     [SerializeField]
     private List<Animation> animations = new List<Animation>();
 
+    [Tooltip("The current index of the playing animation")]
+    [Readonly]
+    [SerializeField]
     private int playing = -1;
     private SpriteRenderer _renderer;
 
@@ -20,6 +23,15 @@ public class AnimatedObject : MonoBehaviour
     /// See <see cref="MonoBehaviour"/>.
     /// </summary>
     private void Start() => StartCoroutine(AnimationUpdate());
+
+    /// <summary>
+    /// See <see cref="MonoBehaviour"/>.
+    /// </summary>
+    private void OnValidate()
+    {
+        for (int i = 0; i < animations.Count; i++)
+            animations[i].animationIndex = i;
+    }
 
     /// <summary>
     /// Play <paramref name="index"/>.
@@ -81,4 +93,9 @@ public class Animation
     public string animationName = "Animation";
     public float cooldown = 0.02f;
     public Sprite[] sprites;
+
+    [Space]
+
+    [Readonly]
+    public int animationIndex;
 }
