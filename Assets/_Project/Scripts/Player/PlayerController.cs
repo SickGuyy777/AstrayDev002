@@ -25,9 +25,9 @@ public class PlayerController : CharacterController
         MoveDirection = new Vector2(horizontalInput, verticalInput);
 
         if (MoveDirection != Vector2.zero)
-            animated.PlayAnimation(0);
+            animated.PlaySprite(0, 0);
         else
-            animated.StopAnimation();
+            animated.PlaySprite(1, 0);
 
         // Rotation
         if (rotationMode == RotationMode.ToTarget)

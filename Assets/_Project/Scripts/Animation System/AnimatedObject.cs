@@ -1,7 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Assertions;
 
+/// <summary>
+/// An object with animation
+/// </summary>
 [RequireComponent(typeof(SpriteRenderer))]
 public class AnimatedObject : MonoBehaviour
 {
@@ -9,23 +13,31 @@ public class AnimatedObject : MonoBehaviour
     [SerializeField]
     private List<Animation> animations = new List<Animation>();
 
-    [Tooltip("The current index of the playing animation")]
-    [Readonly]
-    [SerializeField]
-    private int playing = -1;
+    [field: Tooltip("The current index of the playing animation (-1 = not playing)")]
+    [field: Readonly]
+    public int Playing { get; private set; } = -1;
+
+    [field: Tooltip("The current index of the playing sprite (-1 = full animation)")]
+    [field: Readonly]
+    public int Sprite { get; private set; } = -1;
     private SpriteRenderer _renderer;
+
+    private bool inLoop;
 
     /// <summary>
     /// See <see cref="MonoBehaviour"/>.
+    /// Referencing <see cref="_renderer"/>.
     /// </summary>
     private void Awake() => _renderer = GetComponent<SpriteRenderer>();
     /// <summary>
     /// See <see cref="MonoBehaviour"/>.
+    /// Starting <see cref="AnimationUpdate"/>.
     /// </summary>
     private void Start() => StartCoroutine(AnimationUpdate());
 
     /// <summary>
     /// See <see cref="MonoBehaviour"/>.
+    /// Updating animation indexes
     /// </summary>
     private void OnValidate()
     {
@@ -37,17 +49,39 @@ public class AnimatedObject : MonoBehaviour
     /// Play <paramref name="index"/>.
     /// </summary>
     /// <param name="index"></param>
-    public void PlayAnimation(int index)
+    public void PlayAnimation(int index, bool force)
     {
-        if (index < 0 || index >= animations.Count)
+        if (index < 0 || index >= animations.Count || index == Playing)
             return;
 
-        playing = index;
+        if (force)
+            StopAnimation();
+
+        Sprite = -1;
+        Playing = index;
+        _renderer.sprite = animations[Playing].sprites[0];
     }
     /// <summary>
     /// Stop playing animations.
     /// </summary>
-    public void StopAnimation() => playing = -1;
+    public void StopAnimation()
+    {
+        Playing = -1;
+        StopCoroutine(PlayAnimation(Playing));
+        inLoop = false;
+    }
+
+    public void PlaySprite(int animationIndex, int spriteIndex)
+    {
+        Assert.IsFalse(animationIndex >= animations.Count, "Animation index is out of range.");
+        Assert.IsFalse(spriteIndex >= animations[animationIndex].sprites.Length, "Sprite index is out of range.");
+
+        if (animationIndex == Playing)
+            return;
+
+        Playing = animationIndex;
+        Sprite = spriteIndex;
+    }
 
     /// <summary>
     /// The animation update cycle
@@ -57,30 +91,50 @@ public class AnimatedObject : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitUntil(() => playing >= 0);
-            while (playing >= 0)
+            yield return new WaitUntil(() => Playing >= 0);
+            while (Playing >= 0)
             {
-                StartCoroutine(PlayAnimation());
-                yield return new WaitForSeconds(animations[playing].cooldown * animations[playing].sprites.Length);
+                if (nRunning > 0)
+                    break;
+
+                if (Playing >= 0)
+                    StartCoroutine(PlayAnimation(Playing));
+
+                yield return new WaitUntil(() => nRunning == 0);
             }
         }
     }
 
+    int nRunning = 0;
     /// <summary>
-    /// Play <see cref="playing"/>.
+    /// Play <see cref="Playing"/>.
     /// </summary>
     /// <returns></returns>
-    private IEnumerator PlayAnimation()
+    private IEnumerator PlayAnimation(int currentAnim)
     {
-        foreach (var sprite in animations[playing].sprites)
+        nRunning++;
+        inLoop = true;
+        foreach (var sprite in animations[currentAnim].sprites)
         {
+            if (Sprite > -1)
+            {
+                if (Sprite < 0 || Playing != currentAnim)
+                    break;
+
+                _renderer.sprite = animations[currentAnim].sprites[Sprite];
+                break;
+            }
+
             _renderer.sprite = sprite;
 
-            if (playing < 0)
-                yield break;
+            yield return new WaitForSeconds(animations[currentAnim].cooldown);
 
-            yield return new WaitForSeconds(animations[playing].cooldown);
+            if (Playing != currentAnim || nRunning > 1)
+                break;
         }
+
+        nRunning--;
+        inLoop = false;
     }
 }
 
