@@ -52,15 +52,25 @@ public class Interactable : MonoBehaviour
     /// Interact with the <see cref="Interactable"/>.
     /// </summary>
     /// <param name="interactor"></param>
-    public void Interact(Interactor interactor, params object[] objs)
+    public void Interact(Interactor interactor, InteractionType type = InteractionType.Normal, params object[] objs)
     {
         interactFunction = true;
 
         if (!Interacted)
         {
             Interacted = true;
-            OnStartInteract(interactor, objs);
-            StartCoroutine(InteractionUpdate(interactor, objs));
+
+            switch (type)
+            {
+                case InteractionType.Start:
+                    OnStartInteract(interactor, objs);
+                    Interacted = false;
+                    break;
+
+                case InteractionType.Normal:
+                    StartCoroutine(InteractionUpdate(interactor, objs));
+                    break;
+            }
         }
     }
 
@@ -68,7 +78,7 @@ public class Interactable : MonoBehaviour
     /// Called after <see cref="Hover(Interactor)"/>.
     /// </summary>
     /// <param name="interactor"></param>
-    protected virtual void OnHover(Interactor interactor) { Debug.Log("Hovering"); }
+    protected virtual void OnHover(Interactor interactor) { }
     /// <summary>
     /// Called after <see cref="StopHover(Interactor)"/>.
     /// </summary>
@@ -119,4 +129,9 @@ public class Interactable : MonoBehaviour
 
         OnStopInteract(interactor, objs);
     }
+}
+
+public enum InteractionType
+{
+    Start, Normal
 }

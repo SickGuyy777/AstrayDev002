@@ -6,6 +6,8 @@ public class Pickupable : Interactable
 
     protected override void OnStartInteract(Interactor interactor, object[] par)
     {
+        base.OnStartInteract(interactor, par);
+
         if (IsPicked)
             Drop();
         else
@@ -20,15 +22,23 @@ public class Pickupable : Interactable
 
     private void Drop()
     {
+        if (!IsPicked)
+            return;
+
+        Debug.Log("DROP");
         IsPicked = false;
         transform.SetParent(null);
     }
 
     private void Pickup(Vector2 newPosition, Quaternion quaternion, Transform newParent = null)
     {
+        if (IsPicked)
+            return;
+
+        Debug.Log("PICKUP");
+        IsPicked = true;
         transform.position = newPosition;
         transform.rotation = quaternion;
         transform.SetParent(newParent);
-        IsPicked = true;
     }
 }

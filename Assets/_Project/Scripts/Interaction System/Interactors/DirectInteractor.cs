@@ -16,28 +16,28 @@ public class DirectInteractor : Interactor
     /// See <see cref="Interactor"/>.
     /// </summary>
     /// <returns></returns>
-    public override Interactable GetSelectedInteractable()
+    public override Interactable GetSelectedInteractable(params Interactable[] skip)
     {
         if (hoveredInteractables.Count == 0)
             return null;
 
-        if (hoveredInteractables.Count == 1)
+        if (hoveredInteractables.Count == 1 && !skip.Contains(hoveredInteractables[0]))
             return hoveredInteractables[0];
 
         float minMagnitude = float.MaxValue;
-        int selectedIndex = 0;
+        int selectedIndex = -1;
 
-        for (int i = 1; i < hoveredInteractables.Count; i++)
+        for (int i = 0; i < hoveredInteractables.Count; i++)
         {
             float magnitude = ((Vector2)(hoveredInteractables[i].transform.position - transform.position)).magnitude;
-            if (magnitude < minMagnitude)
+            if (magnitude < minMagnitude && !skip.Contains(hoveredInteractables[i]))
             {
                 minMagnitude = magnitude;
                 selectedIndex = i;
             }
         }
 
-        return hoveredInteractables[selectedIndex];
+        return selectedIndex == -1 ? null : hoveredInteractables[selectedIndex];
     }
 
     /// <summary>
