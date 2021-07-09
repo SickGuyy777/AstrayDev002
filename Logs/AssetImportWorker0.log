@@ -1,0 +1,546 @@
+Using pre-set license
+Built from '2021.1/staging' branch; Version is '2021.1.7f1 (d91830b65d9b) revision 14227504'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 22000.65; Version 2009; 64bit' Language: 'en' Physical Memory: 16187 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\2021.1.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/idans/Desktop/Astray/AstrayDev002
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+49537
+Successfully changed project path to: C:/Users/idans/Desktop/Astray/AstrayDev002
+C:/Users/idans/Desktop/Astray/AstrayDev002
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 85.42 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.1.7f1 (d91830b65d9b)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/2021.1.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/idans/Desktop/Astray/AstrayDev002/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2070 with Max-Q Design (ID=0x1f10)
+    Vendor:   NVIDIA
+    VRAM:     8031 MB
+    Driver:   27.21.14.6677
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/2021.1.7f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/2021.1.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/2021.1.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56860
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/2021.1.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001664 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 88.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.848 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002606 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 86.33 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.064 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3382 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 128.1 MB.
+System memory in use after: 128.2 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 3835.
+Total: 2.425000 ms (FindLiveObjects: 0.252400 ms CreateObjectMapping: 0.133900 ms MarkObjects: 1.938200 ms  DeleteObjects: 0.099900 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/_Project/Sprites/Player/Arms
+  artifactKey: Guid(0d3db776f9a8a464d8eec0298b4e864c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/Arms using Guid(0d3db776f9a8a464d8eec0298b4e864c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e321cbea282f8af80cd91949f3ebc6b4') in 0.011045 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 349.099760 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms
+  artifactKey: Guid(1cee98a0dfa3b284ba86a10d402c79f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms using Guid(1cee98a0dfa3b284ba86a10d402c79f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a45fac830c40b8199f34ffa29747b4d') in 0.009692 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.454221 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms/Walk
+  artifactKey: Guid(d2e63de1faa161c43b86eda93d125d74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms/Walk using Guid(d2e63de1faa161c43b86eda93d125d74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf1ac66e2c494906f20eda19a601e08d') in 0.009437 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.308269 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms/Walk/Walk_1.png
+  artifactKey: Guid(cb78406b22c75954c99c729c4f7d600d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms/Walk/Walk_1.png using Guid(cb78406b22c75954c99c729c4f7d600d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4e2ffd9b3934a3218cf13e29d4ab715') in 0.187392 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms/Walk/Walk_3.png
+  artifactKey: Guid(8ee66e5ddc1abde46b534b45d1a5a610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms/Walk/Walk_3.png using Guid(8ee66e5ddc1abde46b534b45d1a5a610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4e5a2a32a86e698188f1dfcec91137f') in 0.015772 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000369 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms/Walk/Walk_2.png
+  artifactKey: Guid(dfebad61714ffa344988d3f4e483c89b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms/Walk/Walk_2.png using Guid(dfebad61714ffa344988d3f4e483c89b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1144fe69355dadefc34c602598beeed5') in 0.014899 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms/Walk/Walk_4.png
+  artifactKey: Guid(3d9ce856e9d6d4a42b6f86e755f930eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms/Walk/Walk_4.png using Guid(3d9ce856e9d6d4a42b6f86e755f930eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49a1e8561027a1dfd405100e2d881c32') in 0.018228 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms/Walk/Walk_9.png
+  artifactKey: Guid(c3880a0eb69683142af83fa6a9075af5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms/Walk/Walk_9.png using Guid(c3880a0eb69683142af83fa6a9075af5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c9b3583882b6ce4bee9ab15f0368885') in 0.013241 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms/Walk/Walk_7.png
+  artifactKey: Guid(80bc66ed83a71ea41a4c6e3a9a2f9c34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms/Walk/Walk_7.png using Guid(80bc66ed83a71ea41a4c6e3a9a2f9c34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b150ed394eb060a561e4c38e164c5d5') in 0.014858 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms/Walk/Walk_6.png
+  artifactKey: Guid(88458adf7bf84be45a5263e626fcc6a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms/Walk/Walk_6.png using Guid(88458adf7bf84be45a5263e626fcc6a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd374f5bdc8bf3fae6933475a251bea62') in 0.017239 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms/Walk/Walk_5.png
+  artifactKey: Guid(0fccae16ab9934c4ca9924fae5b0a551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms/Walk/Walk_5.png using Guid(0fccae16ab9934c4ca9924fae5b0a551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '802fd23e313d21bc7b356dde7d594356') in 0.016064 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms/Walk/Walk_8.png
+  artifactKey: Guid(fdc6db3c98f0f5f4d86cb428dc1d226f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms/Walk/Walk_8.png using Guid(fdc6db3c98f0f5f4d86cb428dc1d226f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7413c56585e89b62ae6d0a7fa7abf2e9') in 0.016489 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002506 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.147 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.83 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3387 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 135.7 MB.
+System memory in use after: 135.8 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3981.
+Total: 3.406400 ms (FindLiveObjects: 0.297700 ms CreateObjectMapping: 0.146300 ms MarkObjects: 2.812700 ms  DeleteObjects: 0.148600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.074762 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.073 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3378 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 135.4 MB.
+System memory in use after: 135.5 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3985.
+Total: 2.487200 ms (FindLiveObjects: 0.253900 ms CreateObjectMapping: 0.117900 ms MarkObjects: 2.031600 ms  DeleteObjects: 0.082800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002336 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.877 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3378 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 135.5 MB.
+System memory in use after: 135.6 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3989.
+Total: 2.569000 ms (FindLiveObjects: 0.253400 ms CreateObjectMapping: 0.117300 ms MarkObjects: 2.114700 ms  DeleteObjects: 0.082400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002526 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.976 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3378 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 135.5 MB.
+System memory in use after: 135.6 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3993.
+Total: 2.567100 ms (FindLiveObjects: 0.255700 ms CreateObjectMapping: 0.170400 ms MarkObjects: 2.053600 ms  DeleteObjects: 0.086500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002433 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.923 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3378 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 135.5 MB.
+System memory in use after: 135.6 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3997.
+Total: 2.742600 ms (FindLiveObjects: 0.312000 ms CreateObjectMapping: 0.197200 ms MarkObjects: 2.133700 ms  DeleteObjects: 0.098600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002931 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.035 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3378 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 135.6 MB.
+System memory in use after: 135.7 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4001.
+Total: 2.793000 ms (FindLiveObjects: 0.307400 ms CreateObjectMapping: 0.181800 ms MarkObjects: 2.198100 ms  DeleteObjects: 0.104500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002561 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.96 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.108 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.88 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3378 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 135.6 MB.
+System memory in use after: 135.7 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4005.
+Total: 3.034700 ms (FindLiveObjects: 0.294500 ms CreateObjectMapping: 0.202300 ms MarkObjects: 2.442600 ms  DeleteObjects: 0.094400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002413 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.967 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3378 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 135.6 MB.
+System memory in use after: 135.7 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4009.
+Total: 2.786600 ms (FindLiveObjects: 0.274900 ms CreateObjectMapping: 0.138600 ms MarkObjects: 2.286500 ms  DeleteObjects: 0.085500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002723 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.070 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3378 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 135.6 MB.
+System memory in use after: 135.7 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4013.
+Total: 2.814200 ms (FindLiveObjects: 0.309900 ms CreateObjectMapping: 0.174900 ms MarkObjects: 2.223100 ms  DeleteObjects: 0.105200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002564 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.938 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3378 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 135.6 MB.
+System memory in use after: 135.8 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4017.
+Total: 2.446300 ms (FindLiveObjects: 0.235600 ms CreateObjectMapping: 0.138700 ms MarkObjects: 1.991900 ms  DeleteObjects: 0.079200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002493 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\idans\Desktop\Astray\AstrayDev002\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.901 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3378 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 135.7 MB.
+System memory in use after: 135.8 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4021.
+Total: 2.606400 ms (FindLiveObjects: 0.250200 ms CreateObjectMapping: 0.149800 ms MarkObjects: 2.114200 ms  DeleteObjects: 0.091300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1565.484705 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms/Walk/Walk_3.png
+  artifactKey: Guid(8ee66e5ddc1abde46b534b45d1a5a610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms/Walk/Walk_3.png using Guid(8ee66e5ddc1abde46b534b45d1a5a610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58480a4ef1c5ed0f83de7c8f1416c7c3') in 0.039746 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms/Walk/Walk_2.png
+  artifactKey: Guid(dfebad61714ffa344988d3f4e483c89b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms/Walk/Walk_2.png using Guid(dfebad61714ffa344988d3f4e483c89b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1aa7069d2d08c977b4f073c02dc69ca') in 0.015899 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms/Walk/Walk_4.png
+  artifactKey: Guid(3d9ce856e9d6d4a42b6f86e755f930eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms/Walk/Walk_4.png using Guid(3d9ce856e9d6d4a42b6f86e755f930eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ea6a9289da066c7f33704b22f710fd5') in 0.013343 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms/Walk/Walk_1.png
+  artifactKey: Guid(cb78406b22c75954c99c729c4f7d600d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms/Walk/Walk_1.png using Guid(cb78406b22c75954c99c729c4f7d600d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '507c4fa1cbb357679eaaf79e29fcc290') in 0.011872 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms/Walk/Walk_9.png
+  artifactKey: Guid(c3880a0eb69683142af83fa6a9075af5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms/Walk/Walk_9.png using Guid(c3880a0eb69683142af83fa6a9075af5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88f5c6ee558eef4630276f24f9d0208e') in 0.013612 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms/Walk/Walk_7.png
+  artifactKey: Guid(80bc66ed83a71ea41a4c6e3a9a2f9c34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms/Walk/Walk_7.png using Guid(80bc66ed83a71ea41a4c6e3a9a2f9c34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fae6568734943a932782f9c41b04cfb5') in 0.012781 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms/Walk/Walk_6.png
+  artifactKey: Guid(88458adf7bf84be45a5263e626fcc6a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms/Walk/Walk_6.png using Guid(88458adf7bf84be45a5263e626fcc6a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a32e242b858cd135f032e820c485392') in 0.013762 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms/Walk/Walk_5.png
+  artifactKey: Guid(0fccae16ab9934c4ca9924fae5b0a551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms/Walk/Walk_5.png using Guid(0fccae16ab9934c4ca9924fae5b0a551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef9470469a3cbc54cad78fbf6db44dc3') in 0.013062 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms/Walk/Walk_8.png
+  artifactKey: Guid(fdc6db3c98f0f5f4d86cb428dc1d226f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms/Walk/Walk_8.png using Guid(fdc6db3c98f0f5f4d86cb428dc1d226f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddb844b8edfb14ae8f9eeae95c8c9b7b') in 0.014066 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.153934 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms/Walk/Walk_1.png
+  artifactKey: Guid(cb78406b22c75954c99c729c4f7d600d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms/Walk/Walk_1.png using Guid(cb78406b22c75954c99c729c4f7d600d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66c791858863dff97ae4e5a1a3508b82') in 0.029115 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.242634 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms/Walk/Walk_2.png
+  artifactKey: Guid(dfebad61714ffa344988d3f4e483c89b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms/Walk/Walk_2.png using Guid(dfebad61714ffa344988d3f4e483c89b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56bac4ce88e31a0bdd92455aa92e2c96') in 0.016811 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.531567 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms/Walk/Walk_3.png
+  artifactKey: Guid(8ee66e5ddc1abde46b534b45d1a5a610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms/Walk/Walk_3.png using Guid(8ee66e5ddc1abde46b534b45d1a5a610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c49b037ca089aa6172da86477cc225e3') in 0.015222 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.967534 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms/Walk/Walk_4.png
+  artifactKey: Guid(3d9ce856e9d6d4a42b6f86e755f930eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms/Walk/Walk_4.png using Guid(3d9ce856e9d6d4a42b6f86e755f930eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47750631e150219e54cd16c9486301bd') in 0.013592 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.321040 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms/Walk/Walk_5.png
+  artifactKey: Guid(0fccae16ab9934c4ca9924fae5b0a551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms/Walk/Walk_5.png using Guid(0fccae16ab9934c4ca9924fae5b0a551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0277e23116d9293a9808a573a6fb03d6') in 0.017872 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.531199 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms/Walk/Walk_6.png
+  artifactKey: Guid(88458adf7bf84be45a5263e626fcc6a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms/Walk/Walk_6.png using Guid(88458adf7bf84be45a5263e626fcc6a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '551452ad59096ef07914ee615526f5eb') in 0.016404 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.683029 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms/Walk/Walk_7.png
+  artifactKey: Guid(80bc66ed83a71ea41a4c6e3a9a2f9c34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms/Walk/Walk_7.png using Guid(80bc66ed83a71ea41a4c6e3a9a2f9c34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8603533a5a77a96b791f34b7bd518b4d') in 0.014812 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.697403 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms/Walk/Walk_8.png
+  artifactKey: Guid(fdc6db3c98f0f5f4d86cb428dc1d226f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms/Walk/Walk_8.png using Guid(fdc6db3c98f0f5f4d86cb428dc1d226f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38336bc2277a09519420f20b46395340') in 0.014179 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.260973 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms/Walk/Walk_9.png
+  artifactKey: Guid(c3880a0eb69683142af83fa6a9075af5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms/Walk/Walk_9.png using Guid(c3880a0eb69683142af83fa6a9075af5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c243d28acf2f30a5cfc8aae230ddfd41') in 0.014922 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.437458 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms/Walk/Walk_1.png
+  artifactKey: Guid(cb78406b22c75954c99c729c4f7d600d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms/Walk/Walk_1.png using Guid(cb78406b22c75954c99c729c4f7d600d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a86d2732348d826af75f5b21e5005b16') in 0.011456 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms/Walk/Walk_3.png
+  artifactKey: Guid(8ee66e5ddc1abde46b534b45d1a5a610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms/Walk/Walk_3.png using Guid(8ee66e5ddc1abde46b534b45d1a5a610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44740290a23034e4c5199de8a41fc38a') in 0.009694 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms/Walk/Walk_2.png
+  artifactKey: Guid(dfebad61714ffa344988d3f4e483c89b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms/Walk/Walk_2.png using Guid(dfebad61714ffa344988d3f4e483c89b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '061c3a148e551e97f7342118842c4097') in 0.009726 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms/Walk/Walk_4.png
+  artifactKey: Guid(3d9ce856e9d6d4a42b6f86e755f930eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms/Walk/Walk_4.png using Guid(3d9ce856e9d6d4a42b6f86e755f930eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa7383d5df084cb0de980af3d3163172') in 0.012185 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms/Walk/Walk_9.png
+  artifactKey: Guid(c3880a0eb69683142af83fa6a9075af5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms/Walk/Walk_9.png using Guid(c3880a0eb69683142af83fa6a9075af5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df3da3eca263284a587ee7a24d072f44') in 0.009421 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms/Walk/Walk_7.png
+  artifactKey: Guid(80bc66ed83a71ea41a4c6e3a9a2f9c34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms/Walk/Walk_7.png using Guid(80bc66ed83a71ea41a4c6e3a9a2f9c34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cde449875bf91749483bb368bdb32db4') in 0.013839 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms/Walk/Walk_6.png
+  artifactKey: Guid(88458adf7bf84be45a5263e626fcc6a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms/Walk/Walk_6.png using Guid(88458adf7bf84be45a5263e626fcc6a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17a2062c3f794161665a673174396f79') in 0.011445 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms/Walk/Walk_5.png
+  artifactKey: Guid(0fccae16ab9934c4ca9924fae5b0a551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms/Walk/Walk_5.png using Guid(0fccae16ab9934c4ca9924fae5b0a551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3fd1b64158671f6075a388c5c1d04df') in 0.013340 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/_Project/Sprites/Player/NoArms/Walk/Walk_8.png
+  artifactKey: Guid(fdc6db3c98f0f5f4d86cb428dc1d226f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Sprites/Player/NoArms/Walk/Walk_8.png using Guid(fdc6db3c98f0f5f4d86cb428dc1d226f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ba8e4e9c055253cd341bf7492607487') in 0.009943 seconds 

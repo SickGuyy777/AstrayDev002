@@ -72,6 +72,11 @@ public class CharacterController : MonoBehaviour
     public Vector2 MoveSpeed { get; private set; }
 
     /// <summary>
+    /// Is the character moving?
+    /// </summary>
+    public bool IsMoving => MoveSpeed != Vector2.zero;
+
+    /// <summary>
     /// The character's Rigidbody2D
     /// </summary>
     private Rigidbody2D rb;

@@ -59,6 +59,50 @@ public class AnimatedObject : MonoBehaviour
         Playing = index;
         _renderer.sprite = animations[Playing].sprites[0];
     }
+
+    /// <summary>
+    /// Play <paramref name="name"/>.
+    /// </summary>
+    /// <param name="index"></param>
+    public void PlayAnimation(string name, bool force)
+    {
+        int index = GetAnimationIndexFromName(name);
+
+        if (index == Playing)
+            return;
+
+        if (force)
+            StopAnimation();
+
+        Sprite = -1;
+        Playing = index;
+        _renderer.sprite = animations[Playing].sprites[0];
+    }
+
+    /// <summary>
+    /// Get an <see cref="Animation"/> with the name <paramref name="name"/>.
+    /// </summary>
+    /// <param name="name"></param>
+    /// <returns></returns>
+    private int GetAnimationIndexFromName(string name)
+    {
+        int index = -1;
+
+        for (int i = 0; i < animations.Count; i++)
+        {
+            if (animations[i].animationName == name)
+            {
+                index = i;
+                break;
+            }
+        }
+
+        if (index == -1)
+            Debug.LogException(new System.MissingMemberException($"No animation with name '{name}' found."), gameObject);
+
+        return index;
+    }
+
     /// <summary>
     /// Stop playing animations.
     /// </summary>

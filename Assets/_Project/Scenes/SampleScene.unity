@@ -437,6 +437,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 862aa0ca650eb0548a9d2c45223c2386, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1496102688
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1496102689}
+  m_Layer: 0
+  m_Name: Arms
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1496102689
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496102688}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1648373443}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1648373442
 GameObject:
   m_ObjectHideFlags: 0
@@ -465,6 +495,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2060839462}
+  - {fileID: 1496102689}
   m_Father: {fileID: 1852692386}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -582,6 +613,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2060839462}
   - component: {fileID: 2060839463}
+  - component: {fileID: 2060839464}
+  - component: {fileID: 2060839465}
   m_Layer: 0
   m_Name: No Arms
   m_TagString: Untagged
@@ -655,3 +688,47 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2060839464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060839461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 072f6929e6127f242b34359d119206e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animations:
+  - animationName: Idle
+    cooldown: 0
+    sprites:
+    - {fileID: -5878243063394203837, guid: 325ecbe055d64274e903dbcbccafeed6, type: 3}
+    animationIndex: 0
+  - animationName: Walk
+    cooldown: 0.25
+    sprites:
+    - {fileID: -5013387339712744066, guid: cb78406b22c75954c99c729c4f7d600d, type: 3}
+    - {fileID: 1788440024534259019, guid: dfebad61714ffa344988d3f4e483c89b, type: 3}
+    - {fileID: 5956618288052529504, guid: 8ee66e5ddc1abde46b534b45d1a5a610, type: 3}
+    - {fileID: -5879256443133432312, guid: 3d9ce856e9d6d4a42b6f86e755f930eb, type: 3}
+    - {fileID: 5590480426299989613, guid: 0fccae16ab9934c4ca9924fae5b0a551, type: 3}
+    - {fileID: -8429899801785754620, guid: 88458adf7bf84be45a5263e626fcc6a8, type: 3}
+    - {fileID: 158562851111326813, guid: 80bc66ed83a71ea41a4c6e3a9a2f9c34, type: 3}
+    - {fileID: 8259307907288975844, guid: fdc6db3c98f0f5f4d86cb428dc1d226f, type: 3}
+    - {fileID: 1199539595042876242, guid: c3880a0eb69683142af83fa6a9075af5, type: 3}
+    animationIndex: 1
+--- !u!114 &2060839465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060839461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bb02aea4a6c1f841be1481b6b76a0ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _controller: {fileID: 1852692387}
