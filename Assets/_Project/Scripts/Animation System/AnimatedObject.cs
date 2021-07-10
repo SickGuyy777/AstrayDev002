@@ -47,7 +47,7 @@ public class AnimatedObject : MonoBehaviour
     /// Play <paramref name="index"/>.
     /// </summary>
     /// <param name="index"></param>
-    public void PlayAnimation(int index, bool force)
+    public void PlayAnimation(int index, bool force = true)
     {
         if (index < 0 || index >= animations.Count || index == Playing)
             return;
@@ -64,7 +64,7 @@ public class AnimatedObject : MonoBehaviour
     /// Play <paramref name="name"/>.
     /// </summary>
     /// <param name="index"></param>
-    public void PlayAnimation(string name, bool force)
+    public void PlayAnimation(string name, bool force = true)
     {
         int index = GetAnimationIndexFromName(name);
 

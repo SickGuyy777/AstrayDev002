@@ -37,7 +37,6 @@ public class CharacterInteractor : MonoBehaviour
         if (Pickupable == null)
             return;
 
-        Debug.Log("Dropping (Inside CharacterInteractor)");
         Pickupable.Interact(_interactor, InteractionType.Start);
         Pickupable = null;
     }

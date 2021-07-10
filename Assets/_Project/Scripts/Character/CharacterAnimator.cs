@@ -3,12 +3,15 @@
 [RequireComponent(typeof(AnimatedObject))]
 public class CharacterAnimator : MonoBehaviour
 {
-    private AnimatedObject _animated;
+    protected virtual void OnAwake() { }
+    protected virtual void OnUpdate() { }
+
+    protected AnimatedObject _animated;
 
     [SerializeField]
-    private CharacterController _controller;
+    protected CharacterController _controller;
 
-    private void Awake()
+    protected void Awake()
     {
         _animated = GetComponent<AnimatedObject>();
 
@@ -17,13 +20,17 @@ public class CharacterAnimator : MonoBehaviour
 
         if (!_controller)
             Debug.LogError("Controller is null", gameObject);
+
+        OnAwake();
     }
 
-    private void Update()
+    protected virtual void Update()
     {
         if (_controller.IsMoving)
             _animated.PlayAnimation("Walk", true);
         else
             _animated.PlayAnimation("Idle", true);
+
+        OnUpdate();
     }
 }
