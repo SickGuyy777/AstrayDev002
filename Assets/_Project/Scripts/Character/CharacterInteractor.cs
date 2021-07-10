@@ -11,7 +11,7 @@ public class CharacterInteractor : MonoBehaviour
     private void Update()
     {
         // Interaction
-        bool startInteract = Input.GetKeyDown(KeyCode.E);
+        bool startInteract = Input.GetButtonDown("Interact");
 
         if (startInteract)
         {
